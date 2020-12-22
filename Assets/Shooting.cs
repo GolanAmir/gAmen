@@ -7,15 +7,21 @@ public class Shooting : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
 
-    public float bulletForce = 20f;
+    public float bulletForce = 35f;
+    public float FireRate = 10f;  // The number of bullets fired per second
+    private float lastfired = 0f ;      // The value of Time.time at the last firing moment
 
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1"))
         {
-            Shoot();
+            if ((Time.time - lastfired) > (1 / FireRate))
+            {
+                lastfired = Time.time;
+                Shoot();
+            }
         }
 
     }
