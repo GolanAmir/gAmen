@@ -16,10 +16,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Hero
+  - Bullets
+  - Enemies
+  - Background
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
     locked: 0
   - name: Enviroment
     uniqueID: 3255446583
+    locked: 0
+  - name: Hero
+    uniqueID: 3647904799
     locked: 0
   - name: Default
     uniqueID: 0
