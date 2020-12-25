@@ -6,6 +6,7 @@ public class Shooting : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public Animator animator;
 
     public float bulletForce = 35f;
     public float FireRate = 10f;  // The number of bullets fired per second
@@ -28,8 +29,22 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        //Vector2 sDirection = Input.mousePosition;
+        //sDirection.Normalize();
+
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+
+        Vector3 direction = new Vector3(0.0f, -1.0f, 0);
+        if (animator.GetFloat("Speed") > 0)
+        {
+            direction = new Vector3(animator.GetFloat("Horizontal"), animator.GetFloat("Vertical"), 0f);
+        }
+        bullet.transform.Rotate(0, 0, Mathf.Atan2(direction.y, direction.y));
+
+
+        //rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        rb.AddForce( direction * bulletForce, ForceMode2D.Impulse);
+
     }
 }
