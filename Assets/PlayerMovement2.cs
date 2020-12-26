@@ -44,7 +44,6 @@ public class PlayerMovement2 : MonoBehaviour
         {
             animationDirVertical = -1f;
         }
-        Debug.Log("Hi");
 
 
 

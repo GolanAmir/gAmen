@@ -21,9 +21,12 @@ public class Shooting : MonoBehaviour
             if ((Time.time - lastfired) > (1 / FireRate))
             {
                 lastfired = Time.time;
-                Shoot();
+                //animator.SetBool("Shooting", true);
+                animator.PlayInFixedTime("Shooting Standing");
+                Shoot();  
             }
         }
+        animator.pla
 
     }
 
@@ -35,16 +38,10 @@ public class Shooting : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
 
-        Vector3 direction = new Vector3(0.0f, -1.0f, 0);
-        if (animator.GetFloat("Speed") > 0)
-        {
-            direction = new Vector3(animator.GetFloat("Horizontal"), animator.GetFloat("Vertical"), 0f);
-        }
-        bullet.transform.Rotate(0, 0, Mathf.Atan2(direction.y, direction.y));
+        Vector3 direction = new Vector3(animator.GetFloat("Horizontal"), animator.GetFloat("Vertical"), 0f);
 
-
-        //rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
         rb.AddForce( direction * bulletForce, ForceMode2D.Impulse);
+
 
     }
 }
