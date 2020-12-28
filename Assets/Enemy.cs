@@ -14,7 +14,6 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         rb = this.GetComponent<Rigidbody2D>();
     }
 
@@ -27,6 +26,7 @@ public class Enemy : MonoBehaviour
         rb.rotation = angle;
         direction.Normalize();
         movement = direction;
+
     }
     private void FixedUpdate()
     {
@@ -36,12 +36,13 @@ public class Enemy : MonoBehaviour
     {
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter(Collision other)
     {
-        if (collision.gameObject.tag.Equals("Bullet"))
+        if (other.gameObject.CompareTag("Bullet"))
         {
-            Destroy(collision.gameObject);
-            Destroy(gameObject);
+            Destroy(other.gameObject); // this destroys the enemy
+            Destroy(gameObject); // this destroys the bullet
         }
+
     }
 }

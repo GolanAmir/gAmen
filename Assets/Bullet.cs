@@ -12,8 +12,9 @@ public class Bullet : MonoBehaviour
         Destroy(effect, 0.05f);
         if (collision.gameObject.tag.Equals("Enemy"))
         {
-            Destroy(collision.gameObject);
+            Destroy(collision.collider.gameObject);
         }
+
 
         Destroy(gameObject);
     }
