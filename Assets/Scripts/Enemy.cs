@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int DamageTaken = 1;
-    private int life;
-    public int HP;
+    public int  maxHealth = 100;
+    public int currentHealth;
+    public HealthBar healthBar;
     public Transform Hero;
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
     private Vector2 movement;
+    
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-
         rb = this.GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     // Update is called once per frame
@@ -39,17 +41,21 @@ public class Enemy : MonoBehaviour
     {
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
-   
-    public void OnCollisionEnter2D(Collision2D other)
+
+    public void TakeDamage(int amount)
     {
-        //If the object that triggered this collision is tagged "bullet"
-        if (other.gameObject.tag.Equals("Bullet"))
+        currentHealth -= amount;
+        Debug.Log(currentHealth);
+        if( currentHealth <= 0)
         {
-            
-            HP -= DamageTaken;
-            if (HP <= 0) {
-                Destroy(gameObject);
-            }
+            Die();
         }
     }
+
+    void Die()
+    {
+        Destroy(gameObject);
+    }
+   
+
 }

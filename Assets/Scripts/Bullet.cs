@@ -5,15 +5,28 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public GameObject hitEffect;
-   
-    void OnCollisionEnter2D(Collision2D collision)
+    public int damage = 500;
+    //public inaal abuk madafaka saamak unity nu kvarrrr
+    int diiiiiiiiii;
+
+    void OnTriggerEnter2D(Collider2D collider)
     {
+        Enemy enemy = collider.GetComponent<Enemy>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage(damage);
+        }
         Quaternion collisionDir = transform.rotation;
         GameObject effect = Instantiate(hitEffect, transform.position, collisionDir);
         Destroy(effect, 0.5f);
-
         Destroy(gameObject);
     }
+
+    public int getDamage()
+    {
+        return damage;
+    }
+
 
 
 }
