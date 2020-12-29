@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public int DamageTaken = 1;
+    private int life;
+    public int HP;
     public Transform Hero;
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
@@ -36,13 +39,17 @@ public class Enemy : MonoBehaviour
     {
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
-    private void OnCollisionEnter(Collision other)
+   
+    public void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Bullet"))
+        //If the object that triggered this collision is tagged "bullet"
+        if (other.gameObject.tag.Equals("Bullet"))
         {
-            Destroy(other.gameObject); // this destroys the enemy
-            Destroy(gameObject); // this destroys the bullet
+            
+            HP -= DamageTaken;
+            if (HP <= 0) {
+                Destroy(gameObject);
+            }
         }
-
     }
 }

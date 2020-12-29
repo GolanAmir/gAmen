@@ -11,10 +11,7 @@ public class Bullet_2 : MonoBehaviour
     { 
         GameObject effect = Instantiate(hitEffect, transform.position, transform.rotation);
         Destroy(effect, 0.05f);
-        if (collision.gameObject.tag.Equals("Enemy"))
-        {
-            Destroy(collision.collider.gameObject);
-        }
+
 
 
         Destroy(gameObject);

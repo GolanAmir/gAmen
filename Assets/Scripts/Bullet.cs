@@ -11,11 +11,7 @@ public class Bullet : MonoBehaviour
         Quaternion collisionDir = transform.rotation;
         GameObject effect = Instantiate(hitEffect, transform.position, collisionDir);
         Destroy(effect, 0.5f);
-        if (collision.gameObject.tag.Equals("Enemy"))
-        {
-            Destroy(collision.gameObject);
-        }
-        ///
+
         Destroy(gameObject);
     }
 

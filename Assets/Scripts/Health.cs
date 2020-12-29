@@ -21,9 +21,13 @@ public class Health : MonoBehaviour
     {
   
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        TakeDamage(stdDmg);
+        if (!other.gameObject.tag.Equals("Bullet"))
+        {
+            TakeDamage(stdDmg);
+        }
+       
     }
 
     private void TakeDamage(float stdDmg)

@@ -222,5 +222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e147db2dbbca001469ccd5023c35231d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hero: {fileID: 1031966435158514063, guid: fe637cc13081e774cbfe205f88e64e83, type: 3}
+  HP: 1
+  Hero: {fileID: 8337854034348579722, guid: 5d9b8b8638c816e49af2da2a9c2ad7cc, type: 3}
   moveSpeed: 9
