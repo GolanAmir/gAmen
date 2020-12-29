@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: eea823dfcbea8a54398d4f88fbc1c105
+guid: c13351f9a57278e4d9fa498b448331dc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8037623654345821503
-    second: 1st upgrade buttons_0
+      213: -4982988588398045494
+    second: 1st upgrade buttons 1_0
   - first:
-      213: 4683907526496391280
-    second: 1st upgrade buttons_1
+      213: -1824798286025719044
+    second: 1st upgrade buttons 1_1
   - first:
-      213: 5239196964462686162
-    second: 1st upgrade buttons_2
+      213: 757233358365241954
+    second: 1st upgrade buttons 1_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -92,29 +92,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1st upgrade buttons_0
+      name: 1st upgrade buttons 1_0
       rect:
         serializedVersion: 2
-        x: 71
-        y: 1315
+        x: 47
+        y: 1379
         width: 879
-        height: 616
+        height: 615
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,19 +110,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c2b07c1fdf947090800000000000000
-      internalID: -8037623654345821503
+      spriteID: ac695b4a74ed8dab0800000000000000
+      internalID: -4982988588398045494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1st upgrade buttons_1
+      name: 1st upgrade buttons 1_1
       rect:
         serializedVersion: 2
-        x: 936
-        y: 739
-        width: 1042
+        x: 971
+        y: 898
+        width: 1041
         height: 729
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -143,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07098953415900140800000000000000
-      internalID: 4683907526496391280
+      spriteID: cf202b680a30da6e0800000000000000
+      internalID: -1824798286025719044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1st upgrade buttons_2
+      name: 1st upgrade buttons 1_2
       rect:
         serializedVersion: 2
-        x: 147
-        y: 199
-        width: 910
+        x: 117
+        y: 94
+        width: 911
         height: 646
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -164,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2df6a1771ed55b840800000000000000
-      internalID: 5239196964462686162
+      spriteID: 262bf693abb328a00800000000000000
+      internalID: 757233358365241954
       vertices: []
       indices: 
       edges: []

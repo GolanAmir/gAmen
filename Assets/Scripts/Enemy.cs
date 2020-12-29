@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     public HealthBar healthBar;
     public Transform Hero;
     public float moveSpeed = 5f;
+
+
     private Rigidbody2D rb;
     private Vector2 movement;
     
@@ -45,6 +47,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
+        healthBar.SetHealth(currentHealth);
         Debug.Log(currentHealth);
         if( currentHealth <= 0)
         {

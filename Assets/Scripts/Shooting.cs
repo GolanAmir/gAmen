@@ -33,9 +33,6 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
-        //Vector2 sDirection = Input.mousePosition;
-        //sDirection.Normalize();
-
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
 
@@ -43,6 +40,10 @@ public class Shooting : MonoBehaviour
 
         rb.AddForce( direction * bulletForce, ForceMode2D.Impulse);
 
+    }
 
+    public void setFireRate(float newRate)
+    {
+        FireRate = newRate;
     }
 }
