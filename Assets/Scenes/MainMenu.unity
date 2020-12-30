@@ -262,6 +262,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4266540672882453771, guid: a7e54acfd677f9042868d08e4c2fceb6,
         type: 3}
+    - target: {fileID: 114754865640368622, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1031966435158514069, guid: fe637cc13081e774cbfe205f88e64e83,
+        type: 3}
     - target: {fileID: 114803030738577818, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
       propertyPath: m_FontData.m_Alignment

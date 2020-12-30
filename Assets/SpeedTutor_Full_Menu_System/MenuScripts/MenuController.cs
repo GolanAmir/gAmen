@@ -10,6 +10,7 @@ namespace SpeedTutorMainMenuSystem
     public class MenuController : MonoBehaviour
     {
         public GameObject Bullet;
+        public GameObject Player;
 
         #region Default Values
         [Header("Default Menu Values")]
@@ -262,6 +263,7 @@ namespace SpeedTutorMainMenuSystem
         {
             if (ButtonType == "Yes")
             {
+                Player.GetComponent<Shooting>().setShooterCounter(0);
                 Bullet.GetComponent<Bullet>().setDamage(10);
                 SceneManager.LoadScene(_newGameButtonLevel);
             }

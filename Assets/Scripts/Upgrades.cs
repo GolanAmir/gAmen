@@ -36,10 +36,11 @@ public class Upgrades : MonoBehaviour
         
         if (buttonType == "Heavy 1")
         {
-            player.GetComponent<Shooting>().setFireRate(3);
-            player.GetComponent<Shooting>().setBulletForce(30);
-            player.GetComponent<PlayerMovement2>().setSpeed(22);
-            bullet.GetComponent<Bullet>().setDamage(13);
+            player.GetComponent<Shooting>().setFireRate(1.7f);
+            player.GetComponent<Shooting>().setBulletForce(20);
+            player.GetComponent<Shooting>().setShooterCounter(1);
+            player.GetComponent<PlayerMovement2>().setSpeed(15);
+            bullet.GetComponent<Bullet>().setDamage(10);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             canvasManager.GetComponent<canvasManager>().setCanvNum(3);
             //player.SetActive(true);
@@ -48,10 +49,10 @@ public class Upgrades : MonoBehaviour
 
         if (buttonType == "Light 2")
         {
-            player.GetComponent<Shooting>().setFireRate(3);
-            player.GetComponent<Shooting>().setBulletForce(30);
-            player.GetComponent<PlayerMovement2>().setSpeed(22);
-            bullet.GetComponent<Bullet>().setDamage(13);
+            player.GetComponent<Shooting>().setFireRate(9);
+            player.GetComponent<Shooting>().setBulletForce(40);
+            player.GetComponent<PlayerMovement2>().setSpeed(30);
+            bullet.GetComponent<Bullet>().setDamage(6);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             canvasManager.GetComponent<canvasManager>().setCanvNum(4);
             //player.SetActive(true);
@@ -97,9 +98,9 @@ public class Upgrades : MonoBehaviour
         if (buttonType == "Sniper")
         {
             player.GetComponent<Shooting>().setFireRate(3);
-            player.GetComponent<Shooting>().setBulletForce(30);
-            player.GetComponent<PlayerMovement2>().setSpeed(22);
-            bullet.GetComponent<Bullet>().setDamage(13);
+            player.GetComponent<Shooting>().setBulletForce(60);
+            player.GetComponent<PlayerMovement2>().setSpeed(35);
+            bullet.GetComponent<Bullet>().setDamage(50);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             //canvasManager.GetComponent<canvasManager>().setCanvNum(1);
             //player.SetActive(true);
@@ -108,10 +109,10 @@ public class Upgrades : MonoBehaviour
 
         if (buttonType == "Light 3")
         {
-            player.GetComponent<Shooting>().setFireRate(3);
-            player.GetComponent<Shooting>().setBulletForce(30);
-            player.GetComponent<PlayerMovement2>().setSpeed(22);
-            bullet.GetComponent<Bullet>().setDamage(13);
+            player.GetComponent<Shooting>().setFireRate(15);
+            player.GetComponent<Shooting>().setBulletForce(45);
+            player.GetComponent<PlayerMovement2>().setSpeed(35);
+            bullet.GetComponent<Bullet>().setDamage(6);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             //canvasManager.GetComponent<canvasManager>().setCanvNum(1);
             //player.SetActive(true);
