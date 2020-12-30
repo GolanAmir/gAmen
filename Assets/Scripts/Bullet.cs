@@ -7,7 +7,6 @@ public class Bullet : MonoBehaviour
     public GameObject hitEffect;
     public int damage = 10;
     //public inaal abuk madafaka saamak unity nu kvarrrr
-    int diiikvarrrrr;
 
     void OnTriggerEnter2D(Collider2D collider)
     {

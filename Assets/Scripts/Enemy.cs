@@ -63,7 +63,6 @@ public class Enemy : MonoBehaviour
     {
         currentHealth -= amount;
         healthBar.SetHealth(currentHealth);
-        Debug.Log(currentHealth);
         if( currentHealth <= 0)
         {
             Die();

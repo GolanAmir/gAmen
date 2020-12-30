@@ -86,8 +86,9 @@ public class Upgrades : MonoBehaviour
         if (buttonType == "Heavy 2")
         {
             player.GetComponent<Shooting>().setFireRate(3);
-            player.GetComponent<Shooting>().setBulletForce(30);
-            player.GetComponent<PlayerMovement2>().setSpeed(22);
+            player.GetComponent<Shooting>().setBulletForce(22);
+            player.GetComponent<Shooting>().setShooterCounter(2);
+            player.GetComponent<PlayerMovement2>().setSpeed(15);
             bullet.GetComponent<Bullet>().setDamage(13);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             canvasManager.GetComponent<canvasManager>().setCanvNum(7);
