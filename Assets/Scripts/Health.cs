@@ -22,13 +22,26 @@ public class Health : MonoBehaviour
     {
   
     }
-    void OnCollisionEnter2D(Collision2D other)
+    /*void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag.Equals("Enemy"))
+        Debug.Log(other.gameObject);
+        if (other.gameObject.tag.Equals("HitPoint"))
         {
+            int diii;
             TakeDamage(stdDmg);
         }
        
+    }*/
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        //Debug.Log(collider.gameObject);
+        if (collider.gameObject.tag.Equals("HitPoint"))
+        {
+            int diii;
+            TakeDamage(stdDmg);
+        }
+
     }
 
     private void TakeDamage(float stdDmg)

@@ -45,11 +45,11 @@ public class PlayerMovement2 : MonoBehaviour
             animationDirVertical = -1f;
         }
 
-
-
         animator.SetFloat("Horizontal", animationDirHorizontal);
         animator.SetFloat("Vertical", animationDirVertical);
         animator.SetFloat("Speed", movement.sqrMagnitude);
+
+
         if((animator.GetFloat("Horizontal") < 0 ) && tr.localScale.x > 0)
         {
             tr.localScale -= sides;

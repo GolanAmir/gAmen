@@ -7,6 +7,8 @@ TagManager:
   - Bullet
   - bullet
   - Enemy
+  - Drill
+  - HitPoint
   layers:
   - Default
   - TransparentFX

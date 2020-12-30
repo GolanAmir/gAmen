@@ -48,7 +48,6 @@ public class WaveSpawner : MonoBehaviour
 
     }
 
- 
     void Update()
     {
         if(state == SpawnState.WAITING)
@@ -90,7 +89,7 @@ public class WaveSpawner : MonoBehaviour
         if(nextWave + 1 > waves.Length - 1)
         {
             Debug.Log("ALL WAVES COMPLETE! LOOPING...");   // the place to change things if we dont want it to loop etc
-            SceneManager.LoadScene("WinScene");
+            SceneManager.LoadScene("WinScreen");
         }
         else
         {

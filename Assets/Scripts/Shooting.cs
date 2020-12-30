@@ -17,7 +17,6 @@ public class Shooting : MonoBehaviour
 
  
     Vector3 temp = new Vector3(0, 0.3f, 0);
-    //Vector3 temp2 = 
     
     
     // Update is called once per frame

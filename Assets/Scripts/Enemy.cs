@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,12 +9,16 @@ public class Enemy : MonoBehaviour
     public int currentHealth;
     public HealthBar healthBar;
     public Transform Hero;
+    public Transform SelfTr;
     public float moveSpeed = 5f;
+    public Animator animator;
+
 
 
     private Rigidbody2D rb;
     private Vector2 movement;
-    
+    Vector3 sides = new Vector3(3.0f, 0.0f, 0.0f);
+
 
 
 
@@ -31,7 +36,17 @@ public class Enemy : MonoBehaviour
         Vector3 direction = Hero.position - transform.position;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        rb.rotation = angle;
+        //rb.rotation = angle;
+        if((angle > 90 || angle < -90) && SelfTr.localScale.x > 0)
+        {
+            SelfTr.localScale -= sides;
+        }
+        if ((angle < 90 && angle > -90) && SelfTr.localScale.x < 0)
+        {
+            SelfTr.localScale += sides;
+        }
+
+
         direction.Normalize();
         movement = direction;
     }
@@ -59,6 +74,19 @@ public class Enemy : MonoBehaviour
     {
         Destroy(gameObject);
     }
-   
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.tag == "Drill")
+        {
+            Attack();        
+        }
+        //animator.SetBool("Attacking", false);
+    }
+
+    private void Attack()
+    {
+        animator.SetBool("Attacking", true);
+    }
 
 }
