@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WaveSpawner : MonoBehaviour
 {
     public enum SpawnState {  SPAWNING, WAITING, COUNTING };
+    public GameObject player;
+    public GameObject thisobject;
+    public GameObject canvasManager;
+    //int canvNum = canvasManager.GetComponent<canvasManager>().canvNum;
 
     [System.Serializable]
     public class Wave
@@ -75,13 +80,17 @@ public class WaveSpawner : MonoBehaviour
     void WaveCompleted ()
     {
         Debug.Log("Wave Completed!");
+        canvasManager.GetComponent<canvasManager>().chooseCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
+        //player.SetActive(false);
+        thisobject.SetActive(false);
+
         state = SpawnState.COUNTING;
         waveCountdown = timeBetweenWaves;
 
         if(nextWave + 1 > waves.Length - 1)
         {
-            nextWave = 0;
             Debug.Log("ALL WAVES COMPLETE! LOOPING...");   // the place to change things if we dont want it to loop etc
+            SceneManager.LoadScene("WinScene");
         }
         else
         {

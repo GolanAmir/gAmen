@@ -9,6 +9,8 @@ namespace SpeedTutorMainMenuSystem
 {
     public class MenuController : MonoBehaviour
     {
+        public GameObject Bullet;
+
         #region Default Values
         [Header("Default Menu Values")]
         [SerializeField] private float defaultBrightness;
@@ -260,6 +262,7 @@ namespace SpeedTutorMainMenuSystem
         {
             if (ButtonType == "Yes")
             {
+                Bullet.GetComponent<Bullet>().setDamage(10);
                 SceneManager.LoadScene(_newGameButtonLevel);
             }
 

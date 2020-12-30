@@ -572,11 +572,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e147db2dbbca001469ccd5023c35231d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 20
   currentHealth: 0
   healthBar: {fileID: 5182729029997884133}
   Hero: {fileID: 8337854034348579722, guid: 5d9b8b8638c816e49af2da2a9c2ad7cc, type: 3}
-  moveSpeed: 5
+  moveSpeed: 3
 --- !u!60 &6801922920609587345
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public GameObject hitEffect;
-    public int damage = 500;
+    public int damage = 10;
     //public inaal abuk madafaka saamak unity nu kvarrrr
     int diiikvarrrrr;
 
@@ -27,6 +27,9 @@ public class Bullet : MonoBehaviour
         return damage;
     }
 
-
+    public void setDamage(int newDamage)
+    {
+        damage = newDamage;
+    }
 
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerMovement2 : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 20f;
 
     public Rigidbody2D rb;
     public Camera cam;
@@ -65,6 +65,11 @@ public class PlayerMovement2 : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    public void setSpeed(float newSpeed)
+    {
+        moveSpeed = newSpeed;
     }
 
 }

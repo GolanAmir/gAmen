@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -34,6 +35,10 @@ public class Health : MonoBehaviour
     {
         currentHealth -= (int)stdDmg;
         healthBar.SetHealth(currentHealth);
+        if(currentHealth <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 
 }

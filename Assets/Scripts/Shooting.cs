@@ -8,8 +8,8 @@ public class Shooting : MonoBehaviour
     public GameObject bulletPrefab;
     public Animator animator;
 
-    public float bulletForce = 35f;
-    public float FireRate = 10f;  // The number of bullets fired per second
+    public float bulletForce = 30f;
+    public float FireRate = 2f;  // The number of bullets fired per second
     private float lastfired = 0f ;      // The value of Time.time at the last firing moment
 
 
@@ -45,5 +45,10 @@ public class Shooting : MonoBehaviour
     public void setFireRate(float newRate)
     {
         FireRate = newRate;
+    }
+
+    public void setBulletForce(float newBF)
+    {
+        bulletForce = newBF;
     }
 }
