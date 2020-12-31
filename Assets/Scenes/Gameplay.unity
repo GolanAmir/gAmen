@@ -717,7 +717,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 12, y: 10}
+  m_Size: {x: 15, y: 12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -7637,7 +7637,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 25
+  orthographic size: 37
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -10246,26 +10246,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8774031471559963623, guid: f793a61359c0fb540b0849cc6663b090,
         type: 3}
-      propertyPath: waves.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8774031471559963623, guid: f793a61359c0fb540b0849cc6663b090,
-        type: 3}
-      propertyPath: canvas.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8774031471559963623, guid: f793a61359c0fb540b0849cc6663b090,
-        type: 3}
-      propertyPath: upgscreen.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8774031471559963623, guid: f793a61359c0fb540b0849cc6663b090,
-        type: 3}
-      propertyPath: spawnPoints.Array.size
-      value: 26
-      objectReference: {fileID: 0}
-    - target: {fileID: 8774031471559963623, guid: f793a61359c0fb540b0849cc6663b090,
-        type: 3}
       propertyPath: canvas
       value: 
       objectReference: {fileID: 1364247925}
@@ -10284,6 +10264,26 @@ PrefabInstance:
       propertyPath: canvasManager
       value: 
       objectReference: {fileID: 1492090234}
+    - target: {fileID: 8774031471559963623, guid: f793a61359c0fb540b0849cc6663b090,
+        type: 3}
+      propertyPath: waves.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774031471559963623, guid: f793a61359c0fb540b0849cc6663b090,
+        type: 3}
+      propertyPath: canvas.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774031471559963623, guid: f793a61359c0fb540b0849cc6663b090,
+        type: 3}
+      propertyPath: upgscreen.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774031471559963623, guid: f793a61359c0fb540b0849cc6663b090,
+        type: 3}
+      propertyPath: spawnPoints.Array.size
+      value: 26
+      objectReference: {fileID: 0}
     - target: {fileID: 8774031471559963623, guid: f793a61359c0fb540b0849cc6663b090,
         type: 3}
       propertyPath: waves.Array.data[0].rate
