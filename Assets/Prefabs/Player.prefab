@@ -472,12 +472,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af63b5d3a19a1974eb981fdba65b113a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  muzzle: {fileID: 0}
   firePoint: {fileID: 1031966435337648300}
   bulletPrefab: {fileID: 4266540672882453771, guid: a7e54acfd677f9042868d08e4c2fceb6,
     type: 3}
   animator: {fileID: 1031966433982001005}
+  shooterCounter: 0
   bulletForce: 35
   FireRate: 6
+  bulletDistance: 0.5
 --- !u!114 &1031966435158514066
 MonoBehaviour:
   m_ObjectHideFlags: 0

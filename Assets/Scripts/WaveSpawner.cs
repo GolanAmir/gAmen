@@ -78,25 +78,22 @@ public class WaveSpawner : MonoBehaviour
     }
     void WaveCompleted ()
     {
-        Debug.Log("Wave Completed!");
-        canvasManager.GetComponent<canvasManager>().chooseCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
-        //player.SetActive(false);
-        thisobject.SetActive(false);
-
-        state = SpawnState.COUNTING;
-        waveCountdown = timeBetweenWaves;
-
-        if(nextWave + 1 > waves.Length - 1)
+        if (nextWave + 1 > waves.Length - 1)
         {
             Debug.Log("ALL WAVES COMPLETE! LOOPING...");   // the place to change things if we dont want it to loop etc
             SceneManager.LoadScene("WinScreen");
         }
         else
         {
+            Debug.Log("Wave Completed!");
+            canvasManager.GetComponent<canvasManager>().chooseCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
+            //player.SetActive(false);
+            thisobject.SetActive(false);
             nextWave++;
-
         }
 
+        state = SpawnState.COUNTING;
+        waveCountdown = timeBetweenWaves;
     }
 
     bool EnemyIsAlive()

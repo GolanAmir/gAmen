@@ -575,12 +575,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e147db2dbbca001469ccd5023c35231d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 40
+  maxHealth: 10
   currentHealth: 0
   healthBar: {fileID: 168550574376472623}
   Hero: {fileID: 8337854034348579722, guid: 5d9b8b8638c816e49af2da2a9c2ad7cc, type: 3}
   SelfTr: {fileID: 5024345158806486918}
-  moveSpeed: 3
+  moveSpeed: 7
   animator: {fileID: 5024345158806486919}
 --- !u!70 &5024345158378007165
 CapsuleCollider2D:
@@ -624,7 +624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5024345158786984989}
   - component: {fileID: 5024345158786984986}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: HitPoint
   m_TagString: HitPoint
   m_Icon: {fileID: 0}
