@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Upgrades : MonoBehaviour
 {
@@ -7,6 +8,9 @@ public class Upgrades : MonoBehaviour
     public GameObject bullet;
     public GameObject canvasManager;
     public GameObject waves;
+
+    [SerializeField]
+    Text CurrentUpgrade;
 
 
 
@@ -24,6 +28,8 @@ public class Upgrades : MonoBehaviour
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             canvasManager.GetComponent<canvasManager>().setCanvNum(1);
 
+            CurrentUpgrade.text = "Light 1";
+
 
 
             //player.SetActive(true);
@@ -39,6 +45,8 @@ public class Upgrades : MonoBehaviour
             bulletSize.localScale = new Vector3(0.9f, 0.9f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             canvasManager.GetComponent<canvasManager>().setCanvNum(2);
+
+            CurrentUpgrade.text = "Balanced";
             //player.SetActive(true);
             waves.SetActive(true);
         }
@@ -53,6 +61,8 @@ public class Upgrades : MonoBehaviour
             bulletSize.localScale = new Vector3(1.2f, 1.2f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             canvasManager.GetComponent<canvasManager>().setCanvNum(3);
+
+            CurrentUpgrade.text = "Heavy 1";
             //player.SetActive(true);
             waves.SetActive(true);
         }
@@ -66,6 +76,9 @@ public class Upgrades : MonoBehaviour
             bulletSize.localScale = new Vector3(0.5f, 0.5f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             canvasManager.GetComponent<canvasManager>().setCanvNum(4);
+
+            CurrentUpgrade.text = "Light 2";
+
             //player.SetActive(true);
             waves.SetActive(true);
         }
@@ -79,6 +92,8 @@ public class Upgrades : MonoBehaviour
             bulletSize.localScale = new Vector3(0.7f, 0.7f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             canvasManager.GetComponent<canvasManager>().setCanvNum(5);
+
+            CurrentUpgrade.text = "Balanced Light 1";
             //player.SetActive(true);
             waves.SetActive(true);
         }
@@ -93,6 +108,9 @@ public class Upgrades : MonoBehaviour
             bulletSize.localScale = new Vector3(0.8f, 0.8f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             canvasManager.GetComponent<canvasManager>().setCanvNum(6);
+
+            CurrentUpgrade.text = "Balanced Heavy 1";
+
             //player.SetActive(true);
             waves.SetActive(true);
         }
@@ -107,6 +125,8 @@ public class Upgrades : MonoBehaviour
             bulletSize.localScale = new Vector3(1.5f, 1.5f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             canvasManager.GetComponent<canvasManager>().setCanvNum(7);
+
+            CurrentUpgrade.text = "Heavy 2";
             //player.SetActive(true);
             waves.SetActive(true);
         }
@@ -120,6 +140,9 @@ public class Upgrades : MonoBehaviour
             //bullet.GetComponent<Bullet>().setDamage(110);
             bulletSize.localScale = new Vector3(0.5f, 0.5f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
+
+            CurrentUpgrade.text = "Sniper";
+
             //canvasManager.GetComponent<canvasManager>().setCanvNum(1);
             //player.SetActive(true);
             waves.SetActive(true);
@@ -133,6 +156,9 @@ public class Upgrades : MonoBehaviour
             bullet.GetComponent<Bullet>().setDamage(5);
             bulletSize.localScale = new Vector3(0.3f, 0.3f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
+
+            CurrentUpgrade.text = "Light 3";
+
             //canvasManager.GetComponent<canvasManager>().setCanvNum(1);
             //player.SetActive(true);
             waves.SetActive(true);
@@ -147,6 +173,9 @@ public class Upgrades : MonoBehaviour
             bullet.GetComponent<Bullet>().setDamage(4);
             bulletSize.localScale = new Vector3(0.2f, 0.2f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
+
+            CurrentUpgrade.text = "Balanced Light 2";
+
             //canvasManager.GetComponent<canvasManager>().setCanvNum(1);
             //player.SetActive(true);
             waves.SetActive(true);
@@ -161,6 +190,9 @@ public class Upgrades : MonoBehaviour
             bullet.GetComponent<Bullet>().setDamage(25);
             bulletSize.localScale = new Vector3(0.6f, 0.6f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
+
+            CurrentUpgrade.text = "Balanced Heavy 2";
+
             //canvasManager.GetComponent<canvasManager>().setCanvNum(1);
             //player.SetActive(true);
             waves.SetActive(true);
@@ -175,6 +207,9 @@ public class Upgrades : MonoBehaviour
             bulletSize.localScale = new Vector3(0.8f, 0.8f, 0);
             bullet.GetComponent<Bullet>().setDamage(80);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
+
+            CurrentUpgrade.text = "Heavy 3";
+
             //canvasManager.GetComponent<canvasManager>().setCanvNum(1);
             //player.SetActive(true);
             waves.SetActive(true);
@@ -188,6 +223,9 @@ public class Upgrades : MonoBehaviour
             player.GetComponent<PlayerMovement2>().setSpeed(10);
             bullet.GetComponent<Bullet>().setDamage(80);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
+
+            CurrentUpgrade.text = "Battle Tank";
+
             //canvasManager.GetComponent<canvasManager>().setCanvNum(1);
             //player.SetActive(true);
             waves.SetActive(true);

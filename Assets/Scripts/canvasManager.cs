@@ -46,6 +46,7 @@ public class canvasManager : MonoBehaviour
             FlyingEyeCount.text = "1";
             GoblinCount.text = "0";
             UIOverlay.SetActive(true);
+
         }
 
         //wave 3
