@@ -38,7 +38,7 @@ public class Health : MonoBehaviour
         //Debug.Log(collider.gameObject);
         if (collider.gameObject.tag.Equals("HitPoint"))
         {
-            int diii;
+            
             TakeDamage(stdDmg);
         }
 

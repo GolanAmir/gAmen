@@ -8,6 +8,9 @@ public class Upgrades : MonoBehaviour
     public GameObject canvasManager;
     public GameObject waves;
 
+
+
+
     public void MouseClick(string buttonType)
     {
 
@@ -20,6 +23,9 @@ public class Upgrades : MonoBehaviour
             bulletSize.localScale = new Vector3(0.6f, 0.6f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             canvasManager.GetComponent<canvasManager>().setCanvNum(1);
+
+
+
             //player.SetActive(true);
             waves.SetActive(true);
         }
