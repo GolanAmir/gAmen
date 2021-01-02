@@ -9,6 +9,7 @@ public class sceneChanger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GetComponent<AudioSource>().Play();
         StartCoroutine(ExampleCoroutine());
     }
     private IEnumerator ExampleCoroutine()

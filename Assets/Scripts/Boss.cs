@@ -71,6 +71,7 @@ public class Boss : MonoBehaviour
 
     void Die()
     {
+        GetComponent<AudioSource>().Play();
         Destroy(gameObject);
     }
 

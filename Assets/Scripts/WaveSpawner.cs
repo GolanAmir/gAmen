@@ -114,9 +114,11 @@ public class WaveSpawner : MonoBehaviour
     IEnumerator SpawnWave (Wave _wave)
     {
         Debug.Log("Spawning Wave : " + _wave.Name);
+        GetComponent<AudioSource>().Play();
         state = SpawnState.SPAWNING;
+        
 
-        for(int i = 0; i < _wave.countEnemy1+ _wave.countEnemy2 + _wave.countEnemy3; i++)
+        for (int i = 0; i < _wave.countEnemy1+ _wave.countEnemy2 + _wave.countEnemy3; i++)
         {
             if (i < _wave.countEnemy1)
             {
@@ -138,6 +140,7 @@ public class WaveSpawner : MonoBehaviour
         state = SpawnState.WAITING;
         yield break;
     }
+
     void SpawnEnemy(Transform _enemy)
     {
         

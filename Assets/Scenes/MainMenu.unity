@@ -251,6 +251,16 @@ PrefabInstance:
       propertyPath: BypassReverbZones
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82731731430920718, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c2fd9e71b427dd14f86496e4845807be, type: 3}
+    - target: {fileID: 82731731430920718, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114026329636207514, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
       propertyPath: m_FontData.m_Font
