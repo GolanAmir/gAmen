@@ -312,6 +312,12 @@ PrefabInstance:
       propertyPath: _newGameButtonLevel
       value: Gameplay
       objectReference: {fileID: 0}
+    - target: {fileID: 114754865640368622, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: bulletSize
+      value: 
+      objectReference: {fileID: 1895813789409457039, guid: a7e54acfd677f9042868d08e4c2fceb6,
+        type: 3}
     - target: {fileID: 114803030738577818, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
       propertyPath: m_Text

@@ -9,6 +9,7 @@ namespace SpeedTutorMainMenuSystem
 {
     public class MenuController : MonoBehaviour
     {
+        public Transform bulletSize;
         public GameObject Bullet;
         public GameObject Player;
 
@@ -265,7 +266,9 @@ namespace SpeedTutorMainMenuSystem
             {
                 Player.GetComponent<Shooting>().setShooterCounter(0);
                 Bullet.GetComponent<Bullet>().setDamage(10);
-                SceneManager.LoadScene(_newGameButtonLevel);
+                bulletSize.localScale = new Vector3(0.5f, 0.5f, 0);
+
+                SceneManager.LoadScene("Story");
             }
 
             if (ButtonType == "No")
