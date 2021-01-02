@@ -18788,7 +18788,7 @@ PrefabInstance:
     - target: {fileID: 8774031471559963623, guid: f793a61359c0fb540b0849cc6663b090,
         type: 3}
       propertyPath: waves.Array.data[0].countEnemy2
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8774031471559963623, guid: f793a61359c0fb540b0849cc6663b090,
         type: 3}
@@ -18879,6 +18879,11 @@ PrefabInstance:
         type: 3}
       propertyPath: upgscreen.Array.data[3].screenName
       value: screen 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774031471559963623, guid: f793a61359c0fb540b0849cc6663b090,
+        type: 3}
+      propertyPath: timeBetweenWaves
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8925556518013396194, guid: f793a61359c0fb540b0849cc6663b090,
         type: 3}

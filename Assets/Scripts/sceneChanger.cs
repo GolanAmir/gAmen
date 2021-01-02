@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class sceneChanger : MonoBehaviour
 {
@@ -10,10 +11,18 @@ public class sceneChanger : MonoBehaviour
     {
         StartCoroutine(ExampleCoroutine());
     }
-    IEnumerator ExampleCoroutine()
+    private IEnumerator ExampleCoroutine()
     {
         yield return new WaitForSeconds(56);
         SceneManager.LoadScene("Gameplay");
     }
-    
+            
+    void update()
+    {
+        if (Input.GetKey("a"))
+        {
+            Debug.Log("Kaka");
+            SceneManager.LoadScene("Gameplay");
+        }
+    }
 }

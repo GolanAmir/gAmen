@@ -59,7 +59,7 @@ public class Shooting : MonoBehaviour
         {
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            float di;
+            
             Vector3 direction = new Vector3(horizon, vert, 0f);
 
             rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);
@@ -93,24 +93,50 @@ public class Shooting : MonoBehaviour
             rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);
             rb1.AddForce(direction * bulletForce, ForceMode2D.Impulse);
             rb2.AddForce(direction * bulletForce, ForceMode2D.Impulse);
+        }
 
-            /*
+        if (shooterCounter == 3)
+        {
+
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position + doubleShotOffset, Quaternion.identity);
-            GameObject bullet1 = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-            GameObject bullet2 = Instantiate(bulletPrefab, firePoint.position - doubleShotOffset, Quaternion.identity);
+            GameObject bullet1 = Instantiate(bulletPrefab, firePoint.position - doubleShotOffset, Quaternion.identity);
+            GameObject bullet2 = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             Rigidbody2D rb1 = bullet1.GetComponent<Rigidbody2D>();
-            Rigidbody2D rb2 = bullet1.GetComponent<Rigidbody2D>();
+            Rigidbody2D rb2 = bullet2.GetComponent<Rigidbody2D>();
 
             Vector3 direction = new Vector3(horizon, vert, 0f);
 
             rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);
-            Debug.Log(direction * bulletForce);
             rb1.AddForce(direction * bulletForce, ForceMode2D.Impulse);
-            Debug.Log(direction * bulletForce);
             rb2.AddForce(direction * bulletForce, ForceMode2D.Impulse);
-            Debug.Log(direction * bulletForce);
-            */
+        }
+
+        if (shooterCounter == 4)
+        {
+
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position + doubleShotOffset, Quaternion.identity);
+            GameObject bullet1 = Instantiate(bulletPrefab, firePoint.position - doubleShotOffset, Quaternion.identity);
+            GameObject bullet2 = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            Rigidbody2D rb1 = bullet1.GetComponent<Rigidbody2D>();
+            Rigidbody2D rb2 = bullet2.GetComponent<Rigidbody2D>();
+
+            Vector3 direction = new Vector3(horizon, vert, 0f);
+
+            rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);
+            rb1.AddForce(direction * bulletForce, ForceMode2D.Impulse);
+            rb2.AddForce(direction * bulletForce, ForceMode2D.Impulse);
+        }
+
+        if (shooterCounter == 5)
+        {
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+           
+            Vector3 direction = new Vector3(horizon, vert, 0f);
+
+            rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);
         }
 
     }
