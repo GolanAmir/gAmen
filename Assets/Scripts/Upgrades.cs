@@ -117,8 +117,8 @@ public class Upgrades : MonoBehaviour
             player.GetComponent<Shooting>().setBulletForce(90);
             player.GetComponent<Shooting>().setShooterCounter(5);
             player.GetComponent<PlayerMovement2>().setSpeed(30);
-            bullet.GetComponent<Bullet>().setDamage(110);
-            bulletSize.localScale = new Vector3(0.15f, 0.15f, 0);
+            //bullet.GetComponent<Bullet>().setDamage(110);
+            bulletSize.localScale = new Vector3(0.5f, 0.5f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             //canvasManager.GetComponent<canvasManager>().setCanvNum(1);
             //player.SetActive(true);
@@ -172,7 +172,7 @@ public class Upgrades : MonoBehaviour
             player.GetComponent<Shooting>().setBulletForce(10);
             player.GetComponent<Shooting>().setShooterCounter(3);
             player.GetComponent<PlayerMovement2>().setSpeed(14);
-            bulletSize.localScale = new Vector3(2.2f, 2.2f, 0);
+            bulletSize.localScale = new Vector3(0.8f, 0.8f, 0);
             bullet.GetComponent<Bullet>().setDamage(80);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             //canvasManager.GetComponent<canvasManager>().setCanvNum(1);

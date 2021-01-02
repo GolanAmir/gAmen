@@ -240,7 +240,7 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 114208141391937272, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
-      propertyPath: m_FontData.m_FontSize
+      propertyPath: m_FontData.m_MaxSize
       value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 114208141391937272, guid: ed022c6eaaa372f498c83d69665e2adc,
@@ -250,8 +250,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114208141391937272, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
-      propertyPath: m_FontData.m_MaxSize
+      propertyPath: m_FontData.m_FontSize
       value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 114208141391937272, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114208141391937272, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114263711298867918, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
@@ -266,13 +276,13 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 114666141393104992, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 45
+      propertyPath: m_FontData.m_MinSize
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114666141393104992, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 4
+      propertyPath: m_FontData.m_FontSize
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 114754865640368622, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
@@ -285,6 +295,12 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1031966435158514069, guid: fe637cc13081e774cbfe205f88e64e83,
+        type: 3}
+    - target: {fileID: 114754865640368622, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: bulletSize
+      value: 
+      objectReference: {fileID: 1895813789409457039, guid: a7e54acfd677f9042868d08e4c2fceb6,
         type: 3}
     - target: {fileID: 114754865640368622, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
@@ -306,12 +322,6 @@ PrefabInstance:
       propertyPath: _newGameButtonLevel
       value: Gameplay
       objectReference: {fileID: 0}
-    - target: {fileID: 114754865640368622, guid: ed022c6eaaa372f498c83d69665e2adc,
-        type: 3}
-      propertyPath: bulletSize
-      value: 
-      objectReference: {fileID: 1895813789409457039, guid: a7e54acfd677f9042868d08e4c2fceb6,
-        type: 3}
     - target: {fileID: 114803030738577818, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
       propertyPath: m_Text
@@ -325,7 +335,7 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 114803030738577818, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
-      propertyPath: m_FontData.m_FontSize
+      propertyPath: m_FontData.m_MaxSize
       value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 114803030738577818, guid: ed022c6eaaa372f498c83d69665e2adc,
@@ -335,7 +345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114803030738577818, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
-      propertyPath: m_FontData.m_MaxSize
+      propertyPath: m_FontData.m_FontSize
       value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 114870446454015422, guid: ed022c6eaaa372f498c83d69665e2adc,
@@ -346,13 +356,13 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 114870446454015422, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 45
+      propertyPath: m_FontData.m_MinSize
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114870446454015422, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 4
+      propertyPath: m_FontData.m_FontSize
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 114993341941609502, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class SnipeBullet : MonoBehaviour
 {
     public GameObject hitEffect;
-    public int damage = 10;
+    public int damage = 120;
     float dll;
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour
 
         Quaternion collisionDir = transform.rotation;
         GameObject effect = Instantiate(hitEffect, transform.position, collisionDir);
-        Destroy(effect, 0.5f);
+        Destroy(effect, 0.25f);
         Destroy(gameObject);
     }
 

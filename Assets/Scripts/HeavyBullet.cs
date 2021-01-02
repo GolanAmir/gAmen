@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class HeavyBullet : MonoBehaviour
 {
     public GameObject hitEffect;
-    public int damage = 10;
-    float dll;
+    public int damage = 80;
+    int dll;
 
     void OnTriggerEnter2D(Collider2D collider)
     {
@@ -23,8 +23,8 @@ public class Bullet : MonoBehaviour
 
         Quaternion collisionDir = transform.rotation;
         GameObject effect = Instantiate(hitEffect, transform.position, collisionDir);
-        Destroy(effect, 0.5f);
-        Destroy(gameObject);
+        Destroy(effect, 0.3f);
+        //Destroy(gameObject);
     }
 
     public int getDamage()
