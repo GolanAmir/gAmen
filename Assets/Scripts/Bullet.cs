@@ -15,6 +15,12 @@ public class Bullet : MonoBehaviour
         {
             enemy.TakeDamage(damage);
         }
+        Boss boss = collider.GetComponent<Boss>();
+        if (boss != null)
+        {
+            boss.TakeDamage(damage);
+        }
+
         Quaternion collisionDir = transform.rotation;
         GameObject effect = Instantiate(hitEffect, transform.position, collisionDir);
         Destroy(effect, 0.5f);

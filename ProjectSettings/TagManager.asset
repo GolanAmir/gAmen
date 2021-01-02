@@ -23,7 +23,7 @@ TagManager:
   - Enemies
   - Background
   - HitPoints
-  - 
+  - Walls
   - 
   - 
   - 
@@ -54,4 +54,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Effects
+    uniqueID: 2439742149
     locked: 0

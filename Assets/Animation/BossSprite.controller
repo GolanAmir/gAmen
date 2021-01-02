@@ -136,7 +136,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: bb596951594efd9438826f5b82197a9e, type: 2}
+  m_Motion: {fileID: 7400000, guid: 12ac72736c5c53a4183e08d2cc062f90, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -148,7 +148,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy1Sprite
+  m_Name: BossSprite
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Attacking
@@ -267,7 +267,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 25a59a64ece5826468b8bc6efc3056ef, type: 2}
+  m_Motion: {fileID: 7400000, guid: cc8413d309cc99d459aae8b15f603602, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

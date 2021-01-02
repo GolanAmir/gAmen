@@ -3,13 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Boss : MonoBehaviour
 {
-    public int  maxHealth = 100;
+    public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
     public Transform Hero;
-    public  Transform SelfTr;
+    public Transform SelfTr;
     public float moveSpeed = 5f;
     public Animator animator;
 
@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 movement;
-    Vector3 sides = new Vector3(3f, 0.0f, 0.0f);
+    Vector3 sides = new Vector3(6f, 0.0f, 0.0f);
 
 
 
@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         //rb.rotation = angle;
-        if((angle > 90 || angle < -90) && SelfTr.localScale.x > 0)
+        if ((angle > 90 || angle < -90) && SelfTr.localScale.x > 0)
         {
             SelfTr.localScale -= sides;
         }
@@ -63,7 +63,7 @@ public class Enemy : MonoBehaviour
     {
         currentHealth -= amount;
         healthBar.SetHealth(currentHealth);
-        if( currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Die();
         }
@@ -78,7 +78,7 @@ public class Enemy : MonoBehaviour
     {
         if (collider.tag == "Drill")
         {
-            Attack();        
+            Attack();
         }
         //animator.SetBool("Attacking", false);
     }
