@@ -266,7 +266,7 @@ namespace SpeedTutorMainMenuSystem
             {
                 Player.GetComponent<Shooting>().setShooterCounter(0);
                 Bullet.GetComponent<Bullet>().setDamage(10);
-                bulletSize.localScale = new Vector3(0.5f, 0.5f, 0);
+                bulletSize.localScale = new Vector3(0.8f, 0.8f, 0);
 
                 SceneManager.LoadScene("Story");
             }
