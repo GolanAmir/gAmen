@@ -576,7 +576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e147db2dbbca001469ccd5023c35231d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 80
+  maxHealth: 55
   currentHealth: 0
   healthBar: {fileID: 168550574376472623}
   Hero: {fileID: 8337854034348579722, guid: 5d9b8b8638c816e49af2da2a9c2ad7cc, type: 3}
