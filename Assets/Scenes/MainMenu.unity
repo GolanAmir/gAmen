@@ -248,8 +248,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 82731731430920718, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
-      propertyPath: BypassReverbZones
-      value: 0
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 82731731430920718, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
@@ -258,8 +258,8 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: c2fd9e71b427dd14f86496e4845807be, type: 3}
     - target: {fileID: 82731731430920718, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
-      propertyPath: m_Volume
-      value: 1
+      propertyPath: BypassReverbZones
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114026329636207514, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
@@ -497,6 +497,21 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 114312424659461088, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114312424659461088, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114312424659461088, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114401047516898260, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
       propertyPath: m_FontData.m_Font
@@ -690,6 +705,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 114754865640368622, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
+      propertyPath: bulletSize
+      value: 
+      objectReference: {fileID: 1895813789409457039, guid: a7e54acfd677f9042868d08e4c2fceb6,
+        type: 3}
+    - target: {fileID: 114754865640368622, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
       propertyPath: brightnessEffect
       value: 
       objectReference: {fileID: 980339799}
@@ -698,12 +719,6 @@ PrefabInstance:
       propertyPath: _newGameButtonLevel
       value: Gameplay
       objectReference: {fileID: 0}
-    - target: {fileID: 114754865640368622, guid: ed022c6eaaa372f498c83d69665e2adc,
-        type: 3}
-      propertyPath: bulletSize
-      value: 
-      objectReference: {fileID: 1895813789409457039, guid: a7e54acfd677f9042868d08e4c2fceb6,
-        type: 3}
     - target: {fileID: 114777735614908760, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
       propertyPath: m_FontData.m_Font
@@ -999,12 +1014,12 @@ PrefabInstance:
     - target: {fileID: 224238052434557046, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 305
+      value: 314
       objectReference: {fileID: 0}
     - target: {fileID: 224238052434557046, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 249
+      value: 243
       objectReference: {fileID: 0}
     - target: {fileID: 224245485339130670, guid: ed022c6eaaa372f498c83d69665e2adc,
         type: 3}

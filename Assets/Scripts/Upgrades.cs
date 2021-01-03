@@ -210,7 +210,7 @@ public class Upgrades : MonoBehaviour
             player.GetComponent<Shooting>().setFireRate(0.6f);
             player.GetComponent<Shooting>().setBulletForce(10);
             player.GetComponent<Shooting>().setShooterCounter(4);
-            player.GetComponent<PlayerMovement2>().setSpeed(10);
+            player.GetComponent<PlayerMovement2>().setSpeed(6);
             bullet.GetComponent<Bullet>().setDamage(80);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             GetComponent<AudioSource>().Play();

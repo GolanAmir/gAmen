@@ -37,4 +37,9 @@ public class Bullet : MonoBehaviour
         damage = newDamage;
     }
 
+    private void Update()
+    {
+        
+    }
+
 }

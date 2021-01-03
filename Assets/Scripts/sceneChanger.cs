@@ -14,7 +14,7 @@ public class sceneChanger : MonoBehaviour
     }
     private IEnumerator ExampleCoroutine()
     {
-        yield return new WaitForSeconds(56);
+        yield return new WaitForSeconds(51);
         SceneManager.LoadScene("Gameplay");
     }
             
