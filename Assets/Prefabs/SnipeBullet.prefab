@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 3578298974959649516}
   - component: {fileID: 7507442116948469725}
   - component: {fileID: 5989142920867931796}
-  - component: {fileID: 5355567991020727257}
   - component: {fileID: 3163747321893941613}
   - component: {fileID: 3163747321893941612}
   - component: {fileID: 3113417740522046036}
   - component: {fileID: 4672977973209768962}
+  - component: {fileID: 160017802832555996}
   m_Layer: 9
   m_Name: SnipeBullet
   m_TagString: Bullet
@@ -109,45 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!60 &5355567991020727257
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212083263288302696}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.75, y: 0.6875}
-    newSize: {x: 8.8, y: 6.8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.07, y: 1.3149999}
-      - {x: 0.03, y: 1.735}
-      - {x: -0.01, y: 2.0149999}
-      - {x: -0.08, y: 2.235}
-      - {x: -0.17, y: 2.385}
-      - {x: -0.26, y: 2.385}
-      - {x: -0.32, y: 2.305}
-      - {x: -0.45999998, y: 1.915}
-      - {x: -0.48, y: 1.645}
-      - {x: -0.51, y: 1.1949999}
-      - {x: -0.51, y: 1.115}
-      - {x: -0.48999998, y: 1.105}
-      - {x: 0.049999997, y: 1.105}
-      - {x: 0.07, y: 1.115}
 --- !u!114 &3163747321893941613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitEffect: {fileID: 2554941226706675510, guid: 3d281aeb663501143a651757597c9884,
     type: 3}
-  damage: 120
+  damage: 200
 --- !u!95 &3163747321893941612
 Animator:
   serializedVersion: 3
@@ -290,3 +251,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &160017802832555996
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212083263288302696}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.375

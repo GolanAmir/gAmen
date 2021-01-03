@@ -725,12 +725,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e147db2dbbca001469ccd5023c35231d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 40
   currentHealth: 0
   healthBar: {fileID: 3289715005893006641}
   Hero: {fileID: 8337854034348579722, guid: 5d9b8b8638c816e49af2da2a9c2ad7cc, type: 3}
   SelfTr: {fileID: 3289715006415166629}
-  moveSpeed: 6
+  moveSpeed: 11
   animator: {fileID: 3289715006415166630}
 --- !u!70 &3289715006779359341
 CapsuleCollider2D:

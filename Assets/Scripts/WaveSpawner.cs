@@ -18,9 +18,12 @@ public class WaveSpawner : MonoBehaviour
         public Transform enemy1;
         public Transform enemy2;
         public Transform enemy3;
+        public Transform enemy4;
         public int countEnemy1;
         public int countEnemy2;
         public int countEnemy3;
+        public int countEnemy4;
+
         public float rate;
     }
 
@@ -118,7 +121,7 @@ public class WaveSpawner : MonoBehaviour
         state = SpawnState.SPAWNING;
         
 
-        for (int i = 0; i < _wave.countEnemy1+ _wave.countEnemy2 + _wave.countEnemy3; i++)
+        for (int i = 0; i < _wave.countEnemy1+ _wave.countEnemy2 + _wave.countEnemy3 + _wave.countEnemy4; i++)
         {
             if (i < _wave.countEnemy1)
             {
@@ -129,9 +132,13 @@ public class WaveSpawner : MonoBehaviour
             {
                 SpawnEnemy(_wave.enemy2);
             }
-            else
+            else if(i < _wave.countEnemy1 + _wave.countEnemy2 + _wave.countEnemy3)
             {
                 SpawnEnemy(_wave.enemy3);
+            }
+            else
+            {
+                SpawnEnemy(_wave.enemy4);
             }
             yield return new WaitForSeconds(1f / _wave.rate);
         }
