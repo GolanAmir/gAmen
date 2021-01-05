@@ -9,6 +9,9 @@ TagManager:
   - Enemy
   - Drill
   - HitPoint
+  - HitPointBoss
+  - HitPointGoblin
+  - explosion
   layers:
   - Default
   - TransparentFX

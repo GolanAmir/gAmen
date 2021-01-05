@@ -50,7 +50,7 @@ public class Upgrades : MonoBehaviour
         
         if (buttonType == "Heavy 1")
         {
-            player.GetComponent<Shooting>().setFireRate(2);
+            player.GetComponent<Shooting>().setFireRate(1.8f);
             player.GetComponent<Shooting>().setBulletForce(20);
             //player.GetComponent<Shooting>().setShooterCounter(1);
             player.GetComponent<PlayerMovement2>().setSpeed(16);
@@ -69,7 +69,7 @@ public class Upgrades : MonoBehaviour
             player.GetComponent<Shooting>().setFireRate(10);
             player.GetComponent<Shooting>().setBulletForce(45);
             player.GetComponent<PlayerMovement2>().setSpeed(30);
-            bullet.GetComponent<Bullet>().setDamage(5);
+            bullet.GetComponent<Bullet>().setDamage(6);
             bulletSize.localScale = new Vector3(0.5f, 0.5f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             canvasManager.GetComponent<canvasManager>().setCanvNum(4);
@@ -112,7 +112,7 @@ public class Upgrades : MonoBehaviour
 
         if (buttonType == "Heavy 2")
         {
-            player.GetComponent<Shooting>().setFireRate(1.5f);
+            player.GetComponent<Shooting>().setFireRate(1.3f);
             player.GetComponent<Shooting>().setBulletForce(15);
             //player.GetComponent<Shooting>().setShooterCounter(2);
             player.GetComponent<PlayerMovement2>().setSpeed(11);
@@ -144,10 +144,10 @@ public class Upgrades : MonoBehaviour
 
         if (buttonType == "Light 3")
         {
-            player.GetComponent<Shooting>().setFireRate(22);
+            player.GetComponent<Shooting>().setFireRate(25);
             player.GetComponent<Shooting>().setBulletForce(55);
             player.GetComponent<PlayerMovement2>().setSpeed(37);
-            bullet.GetComponent<Bullet>().setDamage(5);
+            bullet.GetComponent<Bullet>().setDamage(7);
             bulletSize.localScale = new Vector3(0.3f, 0.3f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             GetComponent<AudioSource>().Play();
@@ -163,7 +163,7 @@ public class Upgrades : MonoBehaviour
             player.GetComponent<Shooting>().setBulletForce(50);
             player.GetComponent<Shooting>().setShooterCounter(1);
             player.GetComponent<PlayerMovement2>().setSpeed(30);
-            bullet.GetComponent<Bullet>().setDamage(4);
+            bullet.GetComponent<Bullet>().setDamage(5);
             bulletSize.localScale = new Vector3(0.2f, 0.2f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             GetComponent<AudioSource>().Play();
@@ -175,12 +175,12 @@ public class Upgrades : MonoBehaviour
 
         if (buttonType == "Balanced Heavy 2")
         {
-            player.GetComponent<Shooting>().setFireRate(1.5f);
+            player.GetComponent<Shooting>().setFireRate(1.8f);
             player.GetComponent<Shooting>().setBulletForce(15);
             player.GetComponent<Shooting>().setShooterCounter(2);
             player.GetComponent<PlayerMovement2>().setSpeed(14);
-            bullet.GetComponent<Bullet>().setDamage(25);
-            bulletSize.localScale = new Vector3(0.6f, 0.6f, 0);
+            bullet.GetComponent<Bullet>().setDamage(30);
+            bulletSize.localScale = new Vector3(0.7f, 0.7f, 0);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             GetComponent<AudioSource>().Play();
             CurrentUpgrade.text = "Balanced Heavy 2";
@@ -191,12 +191,12 @@ public class Upgrades : MonoBehaviour
 
         if (buttonType == "Heavy 3")
         {
-            player.GetComponent<Shooting>().setFireRate(1.3f);
+            player.GetComponent<Shooting>().setFireRate(0.9f);
             player.GetComponent<Shooting>().setBulletForce(10);
             player.GetComponent<Shooting>().setShooterCounter(3);
             player.GetComponent<PlayerMovement2>().setSpeed(7);
             bulletSize.localScale = new Vector3(0.8f, 0.8f, 0);
-            bullet.GetComponent<Bullet>().setDamage(80);
+            bullet.GetComponent<Bullet>().setDamage(20);
             canvasManager.GetComponent<canvasManager>().closeCanvas(canvasManager.GetComponent<canvasManager>().canvNum);
             GetComponent<AudioSource>().Play();
             CurrentUpgrade.text = "Heavy 3";
@@ -207,7 +207,7 @@ public class Upgrades : MonoBehaviour
 
         if (buttonType == "Battle Tank")
         {
-            player.GetComponent<Shooting>().setFireRate(0.6f);
+            player.GetComponent<Shooting>().setFireRate(0.5f);
             player.GetComponent<Shooting>().setBulletForce(10);
             player.GetComponent<Shooting>().setShooterCounter(4);
             player.GetComponent<PlayerMovement2>().setSpeed(4);

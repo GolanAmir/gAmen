@@ -14,16 +14,9 @@ public class sceneChanger : MonoBehaviour
     }
     private IEnumerator ExampleCoroutine()
     {
-        yield return new WaitForSeconds(51);
+        yield return new WaitForSeconds(57);
         SceneManager.LoadScene("Gameplay");
     }
             
-    void update()
-    {
-        if (Input.GetKey("a"))
-        {
-            Debug.Log("Kaka");
-            SceneManager.LoadScene("Gameplay");
-        }
-    }
+    
 }

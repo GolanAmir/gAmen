@@ -81,7 +81,11 @@ public class Enemy : MonoBehaviour
         {
             Attack();        
         }
-        //animator.SetBool("Attacking", false);
+        
+        if(collider.tag == "explosion")
+        {
+            TakeDamage(30);
+        }
     }
 
     private void Attack()

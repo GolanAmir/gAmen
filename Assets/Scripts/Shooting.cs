@@ -83,8 +83,8 @@ public class Shooting : MonoBehaviour
         if (shooterCounter == 2)
         {
             
-            GameObject bullet = Instantiate(bulletPrefab, firePoint.position + doubleShotOffset, Quaternion.identity);
-            GameObject bullet1 = Instantiate(bulletPrefab, firePoint.position - doubleShotOffset, Quaternion.identity);
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position + (2 * doubleShotOffset), Quaternion.identity);
+            GameObject bullet1 = Instantiate(bulletPrefab, firePoint.position - (2 * doubleShotOffset), Quaternion.identity);
             GameObject bullet2 = Instantiate(bulletPrefab, firePoint.position , Quaternion.identity);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             Rigidbody2D rb1 = bullet1.GetComponent<Rigidbody2D>();

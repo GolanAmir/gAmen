@@ -43,8 +43,8 @@ public class canvasManager : MonoBehaviour
             fromBasic.SetActive(true);
             
             waveCountText.text = "2";
-            FlyingEyeCount.text = "5";
-            GoblinCount.text = "3";
+            FlyingEyeCount.text = "19";
+            GoblinCount.text = "13";
             UIOverlay.SetActive(true);
 
         }
@@ -55,8 +55,8 @@ public class canvasManager : MonoBehaviour
         {
             fromLight1.SetActive(true);
             waveCountText.text = "3";
-            FlyingEyeCount.text = "8";
-            GoblinCount.text = "6";
+            FlyingEyeCount.text = "26";
+            GoblinCount.text = "21";
             UIOverlay.SetActive(true);
         }
 
@@ -64,8 +64,8 @@ public class canvasManager : MonoBehaviour
         {
             fromBalanced.SetActive(true);
             waveCountText.text = "3";
-            FlyingEyeCount.text = "8";
-            GoblinCount.text = "6";
+            FlyingEyeCount.text = "26";
+            GoblinCount.text = "21";
             UIOverlay.SetActive(true);
         }
 
@@ -73,8 +73,8 @@ public class canvasManager : MonoBehaviour
         {
             fromHeavy1.SetActive(true);
             waveCountText.text = "3";
-            FlyingEyeCount.text = "8";
-            GoblinCount.text = "6";
+            FlyingEyeCount.text = "26";
+            GoblinCount.text = "21";
             UIOverlay.SetActive(true);
         }
 
@@ -84,8 +84,8 @@ public class canvasManager : MonoBehaviour
         {
             fromLight2.SetActive(true);
             waveCountText.text = "4";
-            FlyingEyeCount.text = "20";
-            GoblinCount.text = "20";
+            FlyingEyeCount.text = "35";
+            GoblinCount.text = "35";
             UIOverlay.SetActive(true);
         }
 
@@ -93,8 +93,8 @@ public class canvasManager : MonoBehaviour
         {
             fromBalancedLight1.SetActive(true);
             waveCountText.text = "4";
-            FlyingEyeCount.text = "20";
-            GoblinCount.text = "20";
+            FlyingEyeCount.text = "35";
+            GoblinCount.text = "35";
             UIOverlay.SetActive(true);
         }
 
@@ -102,8 +102,8 @@ public class canvasManager : MonoBehaviour
         {
             fromBalancedHeavy1.SetActive(true);
             waveCountText.text = "4";
-            FlyingEyeCount.text = "20";
-            GoblinCount.text = "20";
+            FlyingEyeCount.text = "35";
+            GoblinCount.text = "35";
             UIOverlay.SetActive(true);
         }
 
@@ -111,8 +111,8 @@ public class canvasManager : MonoBehaviour
         {
             fromHeavy2.SetActive(true);
             waveCountText.text = "4";
-            FlyingEyeCount.text = "20";
-            GoblinCount.text = "20";
+            FlyingEyeCount.text = "35";
+            GoblinCount.text = "35";
             UIOverlay.SetActive(true);
         }
     }

@@ -723,7 +723,7 @@ GameObject:
   - component: {fileID: 5024345158786984986}
   m_Layer: 12
   m_Name: HitPoint
-  m_TagString: HitPoint
+  m_TagString: HitPointGoblin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

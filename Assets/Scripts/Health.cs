@@ -38,10 +38,16 @@ public class Health : MonoBehaviour
         //Debug.Log(collider.gameObject);
         if (collider.gameObject.tag.Equals("HitPoint"))
         {
-            
             TakeDamage(stdDmg);
         }
-
+        else if (collider.gameObject.tag.Equals("HitPointBoss"))
+        {
+            TakeDamage(stdDmg * 50);
+        }
+        else if (collider.gameObject.tag.Equals("HitPointGoblin"))
+        {
+            TakeDamage(stdDmg * 2);
+        }
     }
 
     private void TakeDamage(float stdDmg)
